@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: #AA998F;
     color: white;
 }
 
@@ -99,6 +100,12 @@ section {
 .intro_inner {
     z-index: 888;
     width: 70%;
+    display: none;
+}
+
+.intro_inner.active {
+    display: block;
+    background: transparent;
 }
 
 .intro-title {
@@ -184,6 +191,45 @@ section {
     transform: scale(1.3);
 }
 
+
+.about {
+    width: 100%;
+    height: 750px;
+}
+
+.container {
+   height: 100%;
+   max-width: 1230px;
+   padding: 100px 200px;
+   margin: 0 auto;
+   background: black;
+}
+
+
+.about_inner {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about_item {
+    width: 400px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+}
+
+.about_item.item-1 {
+    text-align: center;
+    
+}
+
 @media(max-width: 1023px){
     header {
         padding: 15px 10px;
@@ -214,10 +260,19 @@ section {
     }
     
     section {
-        padding: 100px 10px;
+        padding: 50px 10px;
     }
     
-    .video-slide-1 {
+    .video-slide {
         height: 700px;
+    }
+    
+    .intro-subtitle {
+        padding-bottom: 30px;
+    }
+    
+    .btn_link {
+        padding: 10px 30px;
+        font-size: 0.9em;
     }
 }
